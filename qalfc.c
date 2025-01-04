@@ -19,10 +19,10 @@ float fdiv(float a, float b)
     return a / b;
 }
 
-float fexpp(float a, unsigned float b) {
+float fexpp(float a, float b) {
     float i, result = 1;
-    for (i = 0; i < exp; i++)
-        result *= base;
+    for (i = 0; i < b; i++)
+        result *= a;
     return result;
 }
 
@@ -46,10 +46,10 @@ double ddiv(double a, double b)
     return a / b;
 }
 
-double dexpp(double a, unsigned double b) {
+double dexpp(double a, double b) {
     double i, result = 1;
-    for (i = 0; i < exp; i++)
-        result *= base;
+    for (i = 0; i < b; i++)
+        result *= a;
     return result;
 }
 
@@ -77,8 +77,8 @@ int div(int a, int b)
 
 int expp(int a, unsigned int b) {
     int i, result = 1;
-    for (i = 0; i < exp; i++)
-        result *= base;
+    for (i = 0; i < b; i++)
+        result *= a;
     return result;
 }
 
@@ -109,8 +109,8 @@ long ldiv(long a, long b)
 
 long lexpp(long a, unsigned long b) {
     long i, result = 1;
-    for (i = 0; i < exp; i++)
-        result *= base;
+    for (i = 0; i < b; i++)
+        result *= a;
     return result;
 }
 
@@ -141,8 +141,8 @@ short sdiv(short a, short b)
 
 short sexpp(short a, unsigned short b) {
     short i, result = 1;
-    for (i = 0; i < exp; i++)
-        result *= base;
+    for (i = 0; i < b; i++)
+        result *= a;
     return result;
 }
 
