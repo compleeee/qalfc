@@ -53,6 +53,18 @@ double dexpp(double a, double b) {
     return result;
 }
 
+double sqrot(double a)
+{
+    double b=a/3;
+    int c;
+    if(a <= 0) return 0;
+    for (c=0; c<32; c++)
+    b = (b + a / b) / 2;
+    return b;
+    
+}
+
+
 /* INTEGER NUMBER */
 
 int sum(int a, int b)
