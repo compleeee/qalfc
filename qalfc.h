@@ -10,6 +10,7 @@ double dsub(double a, double b);
 double dmol(double a, double b);
 double ddiv(double a, double b);
 double dexpp(double a, unsigned double b);
+double sqrot(double a)
 
 /* INTEGRES NUMBER */
 int sum(int a, int b);
